@@ -194,7 +194,7 @@ void MAT::Reset(double **val, int m, int n){
 }
 
 MAT::~MAT(){
-    for(int i=0; i<this->n; i++){
+    for(int i=0; i<this->m; i++){
         this->val[i]->~VEC();
         //delete this->val[i];
     }
