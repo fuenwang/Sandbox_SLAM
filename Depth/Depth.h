@@ -9,6 +9,8 @@ class DepthMap{
         DepthMap(int h, int w);
         ~DepthMap();
         void Print();
+
+        double& operator()(int i, int j);
 };
 
 

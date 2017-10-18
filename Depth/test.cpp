@@ -7,5 +7,7 @@ int main(){
     //MAT a(3, 6);
 
     t.Print();
+    t(4, 3) = 10000;
+    t.Print();
     return 0;
 }

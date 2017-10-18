@@ -14,3 +14,8 @@ DepthMap::~DepthMap(){
 void DepthMap::Print(){
     this->depth->print();
 }
+
+double& DepthMap::operator()(int i, int j){
+    return (*this->depth)[i][j];
+}
+
