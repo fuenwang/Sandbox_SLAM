@@ -402,8 +402,8 @@ void MAT::print() const{
 MAT MAT::T() const{
     MAT out(this->n, this->m);
 
-    for(int i=0; i<this->m; i++){
-        for(int j=0; j<this->n; j++){
+    for(int i=0; i<this->n; i++){
+        for(int j=0; j<this->m; j++){
             out[i][j] = (*this)[j][i];
         }
     }
