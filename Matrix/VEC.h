@@ -32,6 +32,7 @@ class VEC{
         void sort();
         int dim() const;
         double sum();
+
         bool operator==(VEC &data);
         void operator=(const VEC &data);
         void operator=(const double *a);
@@ -57,7 +58,6 @@ class VEC{
         friend VEC operator-(double num, const VEC &vec);
         friend VEC operator*(double num, const VEC &vec);
         friend VEC operator/(double num, const VEC &vec);
-
 };
 
 VEC operator+(double num, const VEC &vec);
